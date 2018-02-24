@@ -25,6 +25,7 @@ Gem::Specification.new do |spec|
   spec.email         = %w[boissezon.remy@gmail.com valentin@prodhomme.me chill3d@protonmail.com alexandre.zanni@engineer.com]
   spec.date          = '2018-02-24'
   spec.license       = 'CECILL-2.1'
+  spec.required_ruby_version = '>= 2.4.0'
 
   spec.summary       = 'API for used by CANVAS subsystems'
   spec.description   = 'A little API to load and use CANVAS yaml configuration files'
