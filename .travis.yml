@@ -20,9 +20,8 @@ matrix:
 deploy:
   provider: rubygems
   api_key: $RUBYGEMS_API_KEY
-  gem: canvas_oss-configuration
   gemspec: canvas_oss-configuration.gemspec
   on:
     repo: canvas-oss/canvas-configuration
     branch: master
-    rvm: 2.4.0
+    rvm: 2.4.1

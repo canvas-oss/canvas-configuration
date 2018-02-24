@@ -24,10 +24,10 @@ Gem::Specification.new do |spec|
   spec.authors       = %w['Remy BOISSEZON' 'Valentin PRODHOMME' 'Dylan TROLES' 'Alexandre ZANNI']
   spec.email         = %w[boissezon.remy@gmail.com valentin@prodhomme.me chill3d@protonmail.com alexandre.zanni@engineer.com]
   spec.date          = '2018-02-24'
-  spec.license       = 'CeCILL'
+  spec.license       = 'CECILL-2.1'
 
-  spec.summary       = ''
-  spec.description   = ''
+  spec.summary       = 'API for used by CANVAS subsystems'
+  spec.description   = 'A little API to load and use CANVAS yaml configuration files'
   spec.homepage      = 'https://github.com/canvas-oss/canvas-configuration'
 
   spec.files         = `git ls-files -z`.split("\x0").reject do |f|
