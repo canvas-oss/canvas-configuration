@@ -20,6 +20,7 @@ require 'canvas_oss/configuration/version'
 Gem::Specification.new do |spec|
   spec.name          = 'canvas_oss-configuration'
   spec.version       = CanvasOss::Configuration::VERSION
+  spec.version       = "#{spec.version}-alpha-#{ENV['TRAVIS_BUILD_NUMBER']}" if ENV['TRAVIS']
   spec.authors       = %w['Remy BOISSEZON' 'Valentin PRODHOMME' 'Dylan TROLES' 'Alexandre ZANNI']
   spec.email         = %w[boissezon.remy@gmail.com valentin@prodhomme.me chill3d@protonmail.com alexandre.zanni@engineer.com]
   spec.date          = '2018-02-24'

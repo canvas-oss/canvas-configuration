@@ -1,10 +1,18 @@
 sudo: false
 language: ruby
 rvm:
-  - 2.4.1
-  - 2.4.0
-  - ruby-head
+- 2.4.1
+- 2.4.0
+- ruby-head
 matrix:
   allow_failures:
-    - rvm: ruby-head
+  - rvm: ruby-head
 before_install: gem install bundler -v 1.16.1
+deploy:
+  provider: rubygems
+  api_key:
+    secure: C+/Rbh4K5/C8w8gWR0gHvhnmWIvmBXuODQe0PpyMX/ucfyvGWamvOm1QKfgerFMaChqHbVhopEywIWJPBTRDe5Via/FJzxhRebWpFjLQdH+AwB9adqxCl6j/V5BSnaMlWfwBhNFs1gKV2slebQyqw+92hzLEkEjuY3nfelvcll5Ak/RjlHSZCvUDRm+3aiRXuzCBWdLpEa+B620qztcXV1QbuE9+QCPNPz80FW2bLfeRDKgVDosWcIIi4XNgW9mKIs5QJpTRowHIzRU7EcAMnqPFUNTqcXgeI4kvrUbx3JmS29zmANfLOsnHkHu18CZ8Hvc2BkrpzGtyPL2s8niggjFRlYvYRe1UAmzHu2q5OXNpW6xLMjKcOXY7iC6Giffs41QI9KoZqRgMgU7Pkym6O7OKwYzWixZAuai094GrwbgZF4KKd8GQPJHrhnHsAUTOG64SZ1W1UShO1ZoRFskQu2VsB1ejOlNxC0SBALEBt9LR0ak922U7QmygLOvEBOlFRlNQpY4mPYXiDLBS+PzcS68qCp9RB5VAZ5hzXhyxERz/4x4qQ/Qp41KyarjS1ndGobiC85eSZD5YglZAKq5UzLsYxxgr9rsAxtrkg3l8CSQ64m9fT63Zo49tGAkX1F7AShqOC7S/xx1RZ4w0N4ixwGooDf8mEB79mSPVFr97IOw=
+  gem: canvas-configuration
+  on:
+    repo: canvas-oss/canvas-configuration
+    branch: master
