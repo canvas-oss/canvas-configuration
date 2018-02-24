@@ -1,0 +1,25 @@
+%YAML 1.1
+# CANVAS Global system configuration ------------------------------------------
+---
+:canvas:
+  :database:
+    :canvas_configuration:
+      :host: 127.0.0.1
+      :port: 3306
+      :database: 'canvas_configuration'
+      :username: ''
+      :password: ''
+    :canvas_data:
+      :host: 127.0.0.1
+      :port: 3306
+      :database: 'canvas_data'
+      :username: ''
+      :password: ''
+...
+# CANVAS subsystem_name subsystem configuration ----------------------------------------------
+---
+:subsystem_name:
+  :domain:
+    :parameter1: foo
+    :parameter2: bar
+...
